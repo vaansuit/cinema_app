@@ -1,8 +1,6 @@
+import 'package:cinema_app/app/utils/texts.dart';
 import 'package:flutter/material.dart';
-
 import 'package:cinema_app/app/utils/images.dart';
-
-import 'widgets/movie_card_catalog.dart';
 import 'widgets/movie_row_catalog.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,29 +19,35 @@ class HomePage extends StatelessWidget {
         ),
         child: SingleChildScrollView(
           child: Column(
-            children: const [
-              Center(
+            children: [
+              const Center(
                 child: Text(
                   'Em cartaz',
                   style: TextStyle(fontSize: 50),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               MovieRowCatalog(
                 firstPoster: posterOne,
+                firstSinopse: sinopseText,
                 secondPoster: posterTwo,
+                secondSinopse: sinopseText,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               MovieRowCatalog(
                 firstPoster: posterThree,
+                firstSinopse: sinopseText,
                 secondPoster: posterFour,
+                secondSinopse: sinopseText,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               MovieRowCatalog(
                 firstPoster: posterFive,
+                firstSinopse: sinopseText,
                 secondPoster: posterSix,
+                secondSinopse: sinopseText,
               ),
             ],
           ),
