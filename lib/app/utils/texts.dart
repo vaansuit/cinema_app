@@ -1,0 +1,2 @@
+String sinopseText =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Vestibulum rhoncus est pellentesque elit. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Praesent tristique magna sit amet purus gravida. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Arcu felis bibendum ut tristique et.';
