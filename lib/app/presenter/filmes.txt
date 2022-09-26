@@ -1,0 +1,15 @@
+Ataque dos vermes malditos /
+Hora do pesadelo / 
+Hallloween 1 /
+O iluminado / 
+Panico / 
+Massacre da serra elétrica / 
+
+
+Files [
+
+    Info: {
+        name: '', -> string 
+        poster: '', -> string 
+    }
+]

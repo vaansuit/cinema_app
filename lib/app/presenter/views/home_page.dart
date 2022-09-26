@@ -1,4 +1,7 @@
+import 'package:cinema_app/app/utils/images.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/movie_card_catalog.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,16 +31,12 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                children: const [
+                  MovieCardCatalog(
+                    moviePoster: posterOne,
                   ),
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                  MovieCardCatalog(
+                    moviePoster: posterTwo,
                   ),
                 ],
               ),
@@ -46,16 +45,12 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                children: const [
+                  MovieCardCatalog(
+                    moviePoster: posterThree,
                   ),
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                  MovieCardCatalog(
+                    moviePoster: posterFour,
                   ),
                 ],
               ),
@@ -64,16 +59,12 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                children: const [
+                  MovieCardCatalog(
+                    moviePoster: posterFive,
                   ),
-                  Container(
-                    height: 300,
-                    width: 190,
-                    color: Colors.black,
+                  MovieCardCatalog(
+                    moviePoster: posterSix,
                   ),
                 ],
               ),
