@@ -1,7 +1,9 @@
-import 'package:cinema_app/app/utils/images.dart';
 import 'package:flutter/material.dart';
 
+import 'package:cinema_app/app/utils/images.dart';
+
 import 'widgets/movie_card_catalog.dart';
+import 'widgets/movie_row_catalog.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,54 +21,29 @@ class HomePage extends StatelessWidget {
         ),
         child: SingleChildScrollView(
           child: Column(
-            children: [
-              const Center(
+            children: const [
+              Center(
                 child: Text(
                   'Em cartaz',
                   style: TextStyle(fontSize: 50),
                 ),
               ),
-              const SizedBox(
+              SizedBox(height: 20),
+              MovieRowCatalog(
+                firstPoster: posterOne,
+                secondPoster: posterTwo,
+              ),
+              SizedBox(height: 20),
+              MovieRowCatalog(
+                firstPoster: posterThree,
+                secondPoster: posterFour,
+              ),
+              SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  MovieCardCatalog(
-                    moviePoster: posterOne,
-                  ),
-                  MovieCardCatalog(
-                    moviePoster: posterTwo,
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  MovieCardCatalog(
-                    moviePoster: posterThree,
-                  ),
-                  MovieCardCatalog(
-                    moviePoster: posterFour,
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  MovieCardCatalog(
-                    moviePoster: posterFive,
-                  ),
-                  MovieCardCatalog(
-                    moviePoster: posterSix,
-                  ),
-                ],
+              MovieRowCatalog(
+                firstPoster: posterFive,
+                secondPoster: posterSix,
               ),
             ],
           ),
