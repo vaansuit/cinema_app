@@ -11,7 +11,23 @@ class MovieCatalogPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(''),
+        leading: PopupMenuButton(
+          icon: const Icon(Icons.menu),
+          itemBuilder: (context) => [
+            const PopupMenuItem(
+              child: Text('Teste'),
+            ),
+            const PopupMenuItem(
+              child: Text('Teste'),
+            ),
+            const PopupMenuItem(
+              child: Text('Teste'),
+            ),
+          ],
+        ),
+        title: const Center(
+          child: Text('Sessão da Meia Noite'),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(

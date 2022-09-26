@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'app/presenter/views/home_page.dart';
+import 'app/presenter/views/movie_catalog/movie_catalog_page.dart';
 
 void main() => runApp(
       const ProviderScope(child: Main()),
@@ -14,7 +14,7 @@ class Main extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: MovieCatalogPage(),
     );
   }
 }
