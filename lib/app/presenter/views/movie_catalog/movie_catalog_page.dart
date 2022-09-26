@@ -1,10 +1,11 @@
 import 'package:cinema_app/app/utils/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:cinema_app/app/utils/images.dart';
+
 import 'widgets/movie_row_catalog.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class MovieCatalogPage extends StatelessWidget {
+  const MovieCatalogPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
